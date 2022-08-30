@@ -1,26 +1,21 @@
 <template>
-  <div class="home">
+  <div>
     <Navbar />
-    <Hero />
+    <Jobs />
   </div>
 </template>
-
 <script lang="ts">
 /* --------------------------------- imports -------------------------------- */
 import Vue from 'vue'
-import Hero from '@/components/homepage/Hero.vue'
 import Navbar from '@/components/homepage/Navbar.vue'
+import Jobs from '@/components/joblist/Jobs.vue'
 
 export default Vue.extend({
-  name: 'HomeView',
+  name: 'JobListView',
   components: {
-    Hero,
     Navbar,
+    Jobs,
   },
 })
 </script>
-<style scoped lang="scss">
-.home {
-  height: 80vh;
-}
-</style>
+<style scoped lang="scss"></style>
